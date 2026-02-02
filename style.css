@@ -382,11 +382,11 @@ h4 {
 }
         
 .project-card1::before {
-    background-image: url('photos/port.png');
+    background-image: url('port.png');
 }
         
 .project-card2::before {
-    background-image: url('photos/mysql.png');
+    background-image: url('mysql.png');
 }
         
 .project-card1:hover,
@@ -477,4 +477,5 @@ footer p {
 .links a:hover {
     color: #f4e04d;
     transform: scale(1.2);
+
 }
