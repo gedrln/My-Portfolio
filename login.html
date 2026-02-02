@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Angela Legson Portfolio</title>
+    <link rel="stylesheet" href="form.css">
+    <style>
+        .login-container {
+            max-width: 500px;
+            margin: 100px auto;
+            padding: 0 20px;
+        }
+
+        .login-form {
+            background-color: white;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 4px 8px rgba(109, 119, 104, 0.774);
+        }
+
+        .login-form h2 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .login-form .button-group {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            margin-top: 25px;
+        }
+
+        .login-form input[type="submit"] {
+            width: 100%;
+            min-width: auto;
+        }
+
+        .register-link {
+            text-align: center;
+            margin-top: 20px;
+            color: #666;
+        }
+
+        .register-link a {
+            color: #2f6f4e;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .register-link a:hover {
+            text-decoration: underline;
+        }
+
+        .success-message {
+            background-color: #d4edda;
+            color: #155724;
+            padding: 15px;
+            border-radius: 12px;
+            margin-bottom: 20px;
+            text-align: center;
+            border: 1px solid #c3e6cb;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <form action="landpage.html" method="get" class="login-form" autocomplete="on">
+            <div class="success-message">
+                ✓ Registration Successful! Please login to continue.
+            </div>
+            
+            <h2>Login</h2>
+
+            <label for="login-username">Username *</label>
+            <input type="text" id="login-username" name="username" placeholder="Enter your username" required>
+
+            <label for="login-password">Password *</label>
+            <input type="password" id="login-password" name="password" placeholder="Enter your password" required minlength="8">
+
+            <div class="button-group">
+                <input type="submit" value="Login">
+            </div>
+
+            <div class="register-link">
+                Don't have an account? <a href="form.html">Register here</a>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
